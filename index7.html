@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Skills Test</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6f2; 
+    color: #ff1493; 
+    text-align: center;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+
+
+.input-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    border: 2px dashed #ff1493; /* Pink dashed border */
+    box-shadow: 0px 0px 10px rgba(255, 20, 147, 0.3);
+
+}
+
+.input-section h2 {
+    font-size: 18px;
+}
+
+.input-section .highlight {
+    color: #ff1493;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #ff1493;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 2px solid #ff1493;
+    background-color: #fff0f5;
+    color: #ff1493;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    color: lightpink;
+    font-weight: bold;
+}
+
+.button-section {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    color: darkpink;
+}
+
+.pink {
+    background-color: #ff69b4; /* Hot pink */
+}
+
+.light-pink {
+    background-color: #ffb6c1; /* Light pink */
+    color: #ff1493;
+}
+
+.white {
+    background-color: white;
+    color: #ff1493;
+    border: 2px solid #ff1493;
+}
+
+.dark-pink {
+    background-color: #ff1493;
+}
+</style>
+
+</head>
+
+
+
+<body>
+    <div class="container">
+        </div>
+        <div class="input-section">
+            <h2>Hi, my name is <span class="highlight">Nana</span>. Let's test your Math skill.</h2>
+            <p>Given:</p>
+            <label for="num1">Enter a value for <b>a</b>:</label>
+            <input type="number" id="num1">
+            <label for="num2">Enter a value for <b>b</b>:</label>
+            <input type="number" id="num2">
+            <button onclick="calculate()">Click here</button>
+        </div>
+        <div class="button-section">
+            <button class="green" onclick="multiply()">Product of a and b</button>
+            <button class="yellow" onclick="power()">a raised to b</button>
+            <button class="red" onclick="remainder()">Get the remainder</button>
+            <button class="blue" onclick="checkEqual()">Check if a is equal to b</button>
+        </div>
+    </div>
+</body>
+</html>
